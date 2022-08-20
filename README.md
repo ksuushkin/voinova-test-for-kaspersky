@@ -1,6 +1,7 @@
 # voinova-test-for-kaspersky
 
 This is my tesk task for Kaspersky Lab
+Download it and open index.html directly, no need to compile sass. 
 
 Requirements 
 1.	Use HTML5 / CSS 3 / JS 
