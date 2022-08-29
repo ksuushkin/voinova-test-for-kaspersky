@@ -926,6 +926,7 @@
     bottom: 0;
     transition: all ease 0.3s;
     background: #FFFFFF;
+    border-radius: 8px;
 
     @media (min-width: $screen-tablet) {
         top: 0;

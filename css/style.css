@@ -1339,6 +1339,7 @@ a {
   bottom: 0;
   transition: all ease 0.3s;
   background: #FFFFFF;
+  border-radius: 8px;
 }
 @media (min-width: 768px) {
   .fixed-bar {
