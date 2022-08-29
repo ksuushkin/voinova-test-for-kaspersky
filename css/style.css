@@ -1444,6 +1444,7 @@ a {
   .fixed-bar__buyblock-wrapper {
     display: block;
     transition: all ease 0.3s;
+    transform: 0;
   }
 }
 

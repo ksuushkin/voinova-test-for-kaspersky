@@ -1030,6 +1030,7 @@
     @media (min-width: $screen-tablet) {
         display: block;
         transition: all ease 0.3s;
+        transform: 0;
     }
 }
 
