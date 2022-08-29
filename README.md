@@ -11,3 +11,5 @@ Requirements
 •	Firefox (latest version) 
 •	Google Chrome (latest version)
 •	Safari (latest version) 
+
+It took 28h to comlete the task. 
