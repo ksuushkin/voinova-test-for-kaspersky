@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
 
 <head>
-  <base href="<?=$base_url?>">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -201,13 +200,21 @@
                 <input type="checkbox" class="buy__ckeckbox visually-hidden" id="autorenewal" value="autorenewal"
                   checked>
                 <label for="autorenewal" class="buy__ckeckbox-label">Auto Renewal </label>
-                <!-- кнопка и чекбокс -->
                 <a href="#" class="buy__info-link">
                   <img src="img/i-info.svg" alt="info" width="17" height="17">
                 </a>
               </div>
             </div>
           </div>
+        </div>
+        <div class="buyblock__tooltip tooltip">
+          <ul class="tooltip__list">
+            <li class="tooltip__item tooltip__item--users">Users <span>x5</span></li>
+            <li class="tooltip__item tooltip__item--file">File Server <span>x1</span></li>
+            <li class="tooltip__item  tooltip__item--mobile">Mobile Devices <span>x5</span></li>
+            <li class="tooltip__item  tooltip__item--passwords">Password Manager <span>x5</span></li>
+          </ul>
+          <div class="tooltip__arrow"></div>
         </div>
       </div>
       <div class="buyblock__action-wrapper--notablet">
@@ -223,9 +230,10 @@
             <p class="license__text">
               Your license covers
             </p>
-            <a href="" class="license__link">
-              <img src="img/i-info.svg" alt="question" width="17" height="17">
-            </a>
+            <div class="license__link link">
+              <img src="img/i-info.svg" alt="question" width="20" height="20">
+
+            </div>
           </div>
           <ul class="license__item-list">
             <li class="license__item license__item--users">005</li>
@@ -236,7 +244,117 @@
         </div>
       </div>
     </section>
+    <div class="page-main__fixed-bar fixed-bar">
+      <div class="fixed-bar__drag-btn">
+        <img src="img/i-drag.svg" alt="drag button">
+      </div>
+      <div class="fixed-bar__link-wrapper">
+        <div class="fixed-bar__btn btn">
+          Label your CTA here
+        </div>
+      </div>
+      <div class="fixed-bar__buyblock-wrapper">
+        <div class="buyblock__discount">
+          <span>Save 25%</span>
+        </div>
+        <div class="buyblock__inner">
+          <div class="buyblock__product product">
+            <div class="product__inner">
+              <img src="img/product-logo.svg" alt="" class="product__logo">
+              <div class="product__wrapper-inner">
+                <p class="product__name">
+                  Kaspersky <br>Small&nbspOffice&nbspSecurity
+                </p>
+              </div>
+            </div>
+
+            <div class="buyblock__additional">
+              <div class="buyblock__action action">
+                <p class="action__link">Download free trial</p>
+                <p class="action__separator"></p>
+                <p class="action__link">Renew</p>
+                <p class="action__separator"></p>
+                <p class="action__link">Download free trial</p>
+              </div>
+              <div class="buyblock__license license">
+                <div class="license__text-wrapper">
+                  <p class="license__text">
+                    Your license covers
+                  </p>
+                  <a href="" class="license__link">
+                    <img src="img/i-info.svg" alt="question" width="17" height="17">
+                  </a>
+                </div>
+                <ul class="license__item-list">
+                  <li class="license__item license__item--users">005</li>
+                  <li class="license__item license__item--file">001</li>
+                  <li class="license__item license__item--mobile">005</li>
+                  <li class="license__item license__item--passwords">005</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <hr class="buyblock__divider">
+          <div class="buyblock__options-outer">
+            <div class="buyblock__options options">
+              <div class="options__users">
+                <div class="options__name-wrapper">
+                  <p class="options__name ">Users</p>
+                  <p class="options__tooltip options__tooltip--tablet">(10-150)</p>
+                </div>
+                <select name="Users" class="options__select">
+                  <option class="">10</option>
+                  <option class="">15</option>
+                  <option class="">20</option>
+                </select>
+                <p class="options__tooltip options__tooltip--mobile">(10-150)</p>
+              </div>
+              <div class="options__years">
+                <div class="options__name-wrapper">
+                  <p class="options__name">Years</p>
+                </div>
+
+                <select name="Years" class="options__select">
+                  <option class="">1</option>
+                  <option class="">2</option>
+                  <option class="">3</option>
+                </select>
+              </div>
+            </div>
+            <div class="buyblock__buy-outer">
+              <div class="buyblock__price price">
+                <div class="buyblock__discount buyblock__discount--fixed-bar">
+                  Save 25%
+                </div>
+                <div class="price__old-price old-price">
+                  <span class="old-price__code"></span> <span class="old-price__value">000.000.000 € <sup></sup></span>
+
+                </div>
+                <div class="price__new-price new-price">
+                  <span class="new-price__code">KES</span> <span
+                    class="new-price__value">000.000.000<sup>.99*</sup></span>
+                </div>
+              </div>
+              <div class="buyblock__buy buy">
+                <button class="buy__button" type="submit">Buy Now</button>
+                <div class="buy__checkbox-wrapper">
+                  <input type="checkbox" class="buy__ckeckbox visually-hidden" id="autorenewal" value="autorenewal"
+                    checked>
+                  <label for="autorenewal" class="buy__ckeckbox-label">Auto Renewal </label>
+
+                  <a href="#" class="buy__info-link">
+                    <img src="img/i-info.svg" alt="info" width="17" height="17">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
