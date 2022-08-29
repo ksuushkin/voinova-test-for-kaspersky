@@ -920,12 +920,11 @@
 .fixed-bar {
     display: block;
     position: fixed;
-    // max-height: calc(100vh - 64px);
     width: 100%;
     max-width: 361px;
     transform: translateY(150%);
     bottom: 0;
-    transition: all ease 0.5s;
+    transition: all ease 0.3s;
     background: #FFFFFF;
 
     @media (min-width: $screen-tablet) {
@@ -964,6 +963,7 @@
 
 .fixed-bar--visible {
     transform: translate(0);
+    height: 112px;
 }
 
 .fixed-bar__drag-btn {
@@ -1017,16 +1017,24 @@
     color: #FFFFFF
 }
 
+.fixed-bar--visible.fixed-bar--open {
+    height: 529px;
+}
+
 .fixed-bar__buyblock-wrapper {
     display: none;
+    transform: translateY(150%);
+    transition: all ease 0.3s;
 
     @media (min-width: $screen-tablet) {
         display: block;
+        transition: all ease 0.3s;
     }
 }
 
 .fixed-bar--open .fixed-bar__buyblock-wrapper {
     display: block;
+    transform: translateY(0);
 }
 
 .page--overlay {
